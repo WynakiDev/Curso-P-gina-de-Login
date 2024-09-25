@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./img/fotinha.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 420px;
+    height: 580px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px 30px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    backdrop-filter: blur(150px);
+    margin: 5px 2px 5px 2px;
+}
+
+.container h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember input[type="checkbox"] {
+    display: none; /* Esconde a checkbox padrão */
+}
+
+.checkbox-custom {
+    width: 20px; /* Tamanho da checkbox */
+    height: 20px; /* Tamanho da checkbox */
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 4px; /* Arredondar as bordas */
+    background-color: transparent; /* Fundo transparente */
+    position: relative;
+    margin-right: 8px; /* Espaço entre checkbox e texto */
+    cursor: pointer; /* Mantenha o cursor pointer */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave */
+}
+
+.remember input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #fff; /* Cor de fundo quando marcado */
+    border-color: #fff; /* Borda branca quando marcado */
+}
+
+.remember input[type="checkbox"]:checked + .checkbox-custom::after {
+    position: absolute;
+    left: 4px; /* Ajuste a posição do "check" */
+    top: 8px; /* Ajuste a posição do "check" */
+
+    width: 5px;
+    height: 10px;
+    border: solid #333; /* Cor do "check" */
+    border-width: 0 2px 2px 0; /* Estilo do "check" */
+    transform: rotate(45deg); /* Rotaciona para formar um "check" */
+}
+
+.remember a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    color: #fff;
+    font-size: 17px;
+    transition: 0.7s;
+}
+
+.register {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register p {
+    color: #fff;
+}
+.register a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.register a:hover {
+    text-decoration: underline;
+    font-size: 14px;
+    transition: 0.4s;
+}
+.input-box input:hover {
+    font-size: 14px;
+    transition: 0.7s;
+}
+
+
